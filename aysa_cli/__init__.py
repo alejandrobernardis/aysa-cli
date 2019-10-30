@@ -19,7 +19,7 @@ __all__ = [
 
 # version
 SEGMENT = 'dev'
-VERSION = (1, 0, 0, SEGMENT, 0)
+VERSION = (1, 0, 0, SEGMENT, 1)
 
 # doc
 __title__ = 'aysa-cli'
