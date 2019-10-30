@@ -5,13 +5,18 @@
 
 import sys
 import logging
-from pip import _internal as pip
 from aysa_cli import __version__ as cli_v, __commands__ as cmd_u
+
+try:
+    from pip._internal.main import main as pip
+except ImportError:
+    pass
+
 log = logging.getLogger(__name__)
 
 
 def upgrade(done=True):
-    result = pip.main(['install', cmd_u])
+    result = pip(['install', cmd_u])
     if done is True:
         sys.exit(result)
     return result

@@ -30,6 +30,6 @@ __version__ = '.'.join([str(x) for x in VERSION])
 __author__ = 'Alejandro M. BERNARDIS and individual contributors.'
 __email__ = 'alejandro.bernardis@gmail.com'
 __license__ = 'MTI License, Version 2.0'
-__copyright__ = 'Copyright 2019-* {}'.format(__author__)
+__copyright__ = 'Copyright 2019-% {}'.format(__author__)
 __commands__ = 'https://github.com/alejandrobernardis/aysa-commands/archive' \
                '/master.zip'
