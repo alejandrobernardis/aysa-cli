@@ -6,7 +6,12 @@
 import sys
 import logging
 from aysa_cli import __version__ as cli_v, __commands__ as cmd_u
-from pip._internal import main as pip
+
+try:
+    from pip._internal.main import main as pip
+except ImportError:
+    from pip._internal import main as pip
+
 log = logging.getLogger(__name__)
 
 
