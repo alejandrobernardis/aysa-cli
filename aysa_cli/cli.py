@@ -16,7 +16,7 @@ log = logging.getLogger(__name__)
 
 
 def upgrade(done=True):
-    result = pip(['install', cmd_u])
+    result = pip(['install', '--upgrade', cmd_u])
     if done is True:
         sys.exit(result)
     return result
